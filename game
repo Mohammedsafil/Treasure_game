@@ -1,0 +1,47 @@
+print('''
+  *******************************************************************************
+               |                   |                  |                     |
+      _________|________________.=""_;=.______________|_____________________|_______
+     |                   |  ,-"_,=""     `"=.|                  |
+     |___________________|__"=._o`"-._        `"=.______________|___________________
+               |                `"=._o`"=._      _`"=._                     |
+      _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+     |                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+     |___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+               |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+      _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+     |                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+     |___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+     ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+     /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+     ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+     /______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+     ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+     /______/______/______/______/______/______/______/______/______/______/[TomekK]
+     *******************************************************************************
+     ''')
+
+print("Welcome to treasure Island.")
+print("Your mission is to find the treasure")
+
+click = input("Enter Start to proceed : ").lower()
+
+if click == 'start':
+  click1 = input("Enter Left or Right : ").lower()
+  if click1 == 'left':
+    click2 = input("Great you are on the way\n To go further select any one of this SWIM or WAIT FOR BOAT : ").lower()
+    if click2 == 'wait':
+      click3 = input("Great choice and wait a while. \n Select any one door colour : RED , BLUE , YELLOW : ").lower()
+      if click3 == 'yellow':
+        print("Amazing you find the Treasure !\n You won the game")
+      else:
+        print("You selected a wrong door \n GAME OVER!")
+    else:
+      print("Bad time their is a shark in the water \n GAME OVER!")
+  else:
+    print("Oops you fall into an holl , GAME OVER! \n better luck next time.")
+
+else:
+  print("Bye");
+
+print("Thank you for your try !\n Have a nice day")
